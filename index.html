@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Luna 💖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <audio id="bgMusic" loop>
+    <source src="./assets/song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <body>
+    <div class="hearts-container"></div>
+
+    <main class="container">x`x`x`
+      <img
+        id="askGif"
+        class="gif"
+        src="./assets/ask.gif"
+        alt="cute asking gif"
+      />
+
+      <h1>
+        Will you be my Valentine,<br />
+        <span>Luna</span>? 💘
+      </h1>
+
+      <div class="buttons">
+        <button id="yesBtn">Yes 💖</button>
+        <button id="noBtn">No</button>
+      </div>
+    </main>
+
+    <form
+      id="notifyForm"
+      action="https://formspree.io/f/mkozyevw"
+      method="POST"
+      style="display: none"
+    >
+      <input type="email" name="email" value="valentine@luna.click" />
+
+      <input type="hidden" name="event" value="She clicked YES 💖" />
+      <input type="hidden" name="time" id="timeField" />
+      <input
+        type="hidden"
+        name="message"
+        value="Luna accepted the Valentine proposal 🥰"
+      />
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
